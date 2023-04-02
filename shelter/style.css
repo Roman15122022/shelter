@@ -32,11 +32,12 @@ html {
 header{
     background:  radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) , #211F20 center no-repeat;
     height: 100vh;
-    width: 100%;
+    min-width: 100%;
     background-size: cover;
 }
 
 .header__logo{
+    position: relative;
     cursor: pointer;
     padding-top: 30px;
     display: flex;
@@ -569,3 +570,10 @@ footer{
 
     background: url("img/footer-puppy.png");
 }
+/*Media*/
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
