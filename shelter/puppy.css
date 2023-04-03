@@ -340,6 +340,7 @@ footer{
     }
     .footer__flex {
         margin-top: -6px;
+        padding-bottom: 42px;
     }
 }
 @media(max-width: 320px){
