@@ -4,6 +4,7 @@ body{
     font-size: 15px;
     line-height: 1.6;
     color: #333;
+
 }
 :before,
 *:after{
@@ -32,12 +33,13 @@ html {
 header{
     background:  radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) , #211F20 center no-repeat;
     height: 100vh;
+    min-height: 908px;
     min-width: 100%;
     background-size: cover;
+    position: relative;
 }
 
 .header__logo{
-    position: relative;
     cursor: pointer;
     padding-top: 30px;
     display: flex;
@@ -71,6 +73,7 @@ header{
     color: #FFFFFF;
 }
 .header__nav{
+
     padding-top: 16px;
     display: flex;
     justify-content: space-between;
@@ -86,7 +89,8 @@ header{
     color: #CDCDCD;
 }
 .header__content{
-    margin-top: 313px;
+
+    margin-top: 250px;
 }
 .header__content-text{
     font-family: 'Georgia';
@@ -180,6 +184,7 @@ header{
     justify-content: center;
     align-items: center;
     margin-left: 180px;
+    flex-direction: row-reverse;
 
 }
 .about__item{
@@ -194,7 +199,8 @@ header{
 }
 .about__item-2{
     width: 60%;
-    padding-left:60px;
+    padding-left:13px;
+    padding-bottom: 5px;
 
 }
 .about__title{
@@ -248,7 +254,6 @@ header{
 /*Our friends*/
 .our_friends{
     margin-top: 180px;
-    padding-top: 80px;
     background-color: #F6F6F6;
 }
 .our_friends__content{
@@ -358,7 +363,6 @@ header{
 }
 .help__title{
     padding-top: 80px;
-    width: 308px;
     height: 90px;
 
     font-family: 'Georgia';
@@ -430,7 +434,8 @@ span{
     justify-content: center;
 }
 .addition__item{
-    padding-top: 80px;
+    padding-top: 30px;
+    padding-left: 50px;
     width: 50%;
 }
 .addition__title{
@@ -497,7 +502,7 @@ span{
     height: 72px;
 
     color: #B2B2B2;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 
 }
 /*Footer*/
@@ -514,7 +519,7 @@ footer{
 }
 .footer__item{
     width: 30%;
-    padding-right: 120px;
+    padding-right: 80px;
 }
 .footer__title{
     margin-top: 56px;
@@ -570,10 +575,84 @@ footer{
 
     background: url("img/footer-puppy.png");
 }
+
 /*Media*/
-@media (max-width: 768px) {
-    body {
-        font-size: 16px;
+
+@media(max-width: 768px) {
+    /*photo*/
+    .header__img{
+        position: absolute;
+        width: 569px;
+        height: 593px;
+        left: calc(50% - 569px/2 + 70px);
+        bottom: 0px;
+
+        background: url("img/img-768/start-screen-puppy.png");
+    }
+    /*header*/
+    .header{
+        min-height: 1165px;
+    }
+    .header__logo{
+        justify-content: start;
+    }
+    .header__nav{
+        justify-content: center;
+        margin-left: 45px;
+    }
+    .header__content{
+        margin-top: 60px;
+        margin-left: 120px;
+    }
+    .header__btn{
+        margin-left: 130px;
+    }
+    /*about*/
+    .about__content{
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+    .about__item{
+        width: 100%;
+        margin-top: 76px;
+        margin-left: 203px;
+    }
+    .about__item-2 {
+        width: 80%;
+        padding-left: 123px;
+    }
+    /*our__friends*/
+    .friends__title{
+        margin-left: -54px;
+    }
+    .friends__item:nth-child(4){
+        display: none;
+    }
+    .friends__item-arrow{
+        width: 25%;
+    }
+    .friends__item:nth-child(3){
+        margin-right: 50px;
+    }
+    .friends__item:nth-child(3){
+        margin-left: 50px;
+    }
+    .friends__item-arrow:nth-child(2){
+        margin-right: 20px;
+    }
+    .btn__friend{
+        margin-top:-11px;
+    }
+    .btn__friend1{
+        margin-right: 60px;
+        margin-top: 73px;
+    }
+    /*help*/
+    .help__title{
+        margin-top: 14px;
+        margin-right: 55px;
+    }
+    .help__item{
+        width: 33.3333%;
     }
 }
-
