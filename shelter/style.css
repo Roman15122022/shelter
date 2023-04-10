@@ -131,6 +131,7 @@ header{
 .nav-toggle__item:before{
     top: -8px;
 }
+
 .nav-toggle__item:after{
     bottom: -8px;
 }
