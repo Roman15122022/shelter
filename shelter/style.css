@@ -733,6 +733,10 @@ footer{
         margin: 0 auto;
         max-width: 768px;
     }
+    .popup{
+        width: 630px;
+        height: 350px;
+    }
     /*photo*/
     .header__img{
         position: absolute;
@@ -892,6 +896,18 @@ footer{
     .header {
         min-height: 823px;
     }
+    /*pop*/
+    .popup{
+        width: 240px;
+        height: 341px;
+    }
+    .pop__item{
+        width: 100%;
+    }
+    .popup-image{
+        display: none;
+    }
+    /*-------*/
     .header__nav {
         display: none;
         flex-direction: column;
